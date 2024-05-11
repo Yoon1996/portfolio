@@ -1,0 +1,57 @@
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background: url("./public/bg/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  &__hello {
+    font-size: var(--big-large);
+    opacity: 0;
+    transition: all 1s;
+
+    &__show {
+      font-size: var(--big-large);
+      opacity: 1;
+      transition: all 1s;
+    }
+  }
+
+  &__title {
+    font-size: var(--big-large);
+    opacity: 0;
+    &__show {
+      font-size: var(--big-large);
+      opacity: 1;
+      transition: all 2s;
+    }
+  }
+
+  &__ment-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__ment {
+    opacity: 0;
+    font-size: var(--large);
+
+    &__show {
+      opacity: 1;
+      font-size: var(--large);
+      transition: all 2s;
+    }
+  }
+}
+
+.strong {
+  font-weight: bold;
+}

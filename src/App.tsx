@@ -1,10 +1,14 @@
-import "./App.css";
-import "./dd.scss";
+import "./App.scss";
+import HeaderComponent from "./component/header.component";
+import AboutMePage from "./page/about-me.page";
+import IntroPage from "./page/intro.page";
 
 function App() {
   return (
     <>
-      <div className="bood">ddd</div>
+      <HeaderComponent></HeaderComponent>
+      <IntroPage></IntroPage>
+      <AboutMePage></AboutMePage>
     </>
   );
 }
