@@ -1,0 +1,31 @@
+.title {
+  font-size: var(--big-large);
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+/* 큰 데스크탑 */
+@media (min-width: 1201px) {
+}
+
+/* 작은 데스크탑 */
+@media (max-width: 1200px) {
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+}
+
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .title {
+    font-size: 36px;
+    // width: 100%;
+  }
+}

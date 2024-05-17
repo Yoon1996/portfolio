@@ -2,26 +2,32 @@
 @import "typography.scss";
 :root {
   width: 100vw;
+  position: relative;
   height: 100vh;
   body {
     margin: 0;
+    line-height: 1.5;
   }
 }
-// @font-face {
-//   font-family: "SUIT-Regular";
-//   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
-//     format("woff2");
-// }
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+    format("woff2");
+}
 div {
   box-sizing: border-box;
+  font-family: "SUIT-Regular";
 }
-div,
-a {
-  // font-family: "SUIT-Regular";
-  // font-weight: 500;
-}
-
 ul,
 li {
   list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  background: #f2f2f2;
+  position: relative;
 }

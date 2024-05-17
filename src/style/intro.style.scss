@@ -1,7 +1,7 @@
 .intro {
   width: 100vw;
   height: 100vh;
-  background: url("./public/bg/bg1.jpg");
+  background: url("/public/bg/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -9,6 +9,9 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  z-index: -10;
+  // position: sticky;
+  // top: 0;
 
   &__hello {
     font-size: var(--big-large);
@@ -54,4 +57,57 @@
 
 .strong {
   font-weight: bold;
+}
+
+/* 큰 데스크탑 */
+@media (min-width: 1201px) {
+}
+
+/* 작은 데스크탑 */
+@media (max-width: 1200px) {
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+}
+
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .intro {
+    height: 50vh;
+    &__hello {
+      font-size: var(--large);
+      opacity: 0;
+      transition: all 1s;
+
+      &__show {
+        font-size: var(--large);
+        opacity: 1;
+        transition: all 1s;
+      }
+    }
+    &__title {
+      font-size: var(--large);
+      opacity: 0;
+      &__show {
+        font-size: var(--large);
+        opacity: 1;
+        transition: all 2s;
+      }
+    }
+
+    &__ment {
+      opacity: 0;
+      font-size: var(--midum);
+
+      &__show {
+        opacity: 1;
+        font-size: var(--midum);
+        transition: all 2s;
+      }
+    }
+  }
 }

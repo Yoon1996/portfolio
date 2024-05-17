@@ -1,0 +1,55 @@
+.years {
+  width: 16%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: var(--main-normal);
+  border-radius: 30px;
+
+  &__menu {
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s;
+  }
+
+  &__menu:hover {
+    background-color: black;
+    border-radius: 30px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* 큰 데스크탑 */
+@media (min-width: 1201px) {
+}
+
+/* 작은 데스크탑 */
+@media (max-width: 1200px) {
+  .years {
+    width: 30%;
+  }
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+}
+
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+  .years {
+    width: 50%;
+  }
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .years {
+    width: 80%;
+  }
+}

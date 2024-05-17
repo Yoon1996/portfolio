@@ -1,0 +1,126 @@
+.project-card {
+  width: calc(100% / 3 - 40px);
+  height: 360px;
+  background-color: var(--main-light);
+  border-radius: 10px;
+
+  &__wrap {
+    padding: 20px 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 60%;
+  }
+
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    font-size: var(--large);
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+  }
+
+  &__button-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: transparent;
+    background: white;
+  }
+
+  &__button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  &__button:hover a {
+    color: white;
+  }
+}
+
+/* 큰 데스크탑 */
+@media (min-width: 1201px) {
+}
+
+/* 작은 데스크탑 */
+@media (max-width: 1200px) {
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+  .project-card {
+    width: calc(100% / 3 - 20px);
+    &__wrap {
+      padding: 20px 20px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__info {
+      width: 100%;
+      height: 160px;
+    }
+  }
+}
+
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(100% / 2 - 20px);
+
+    &__title {
+      font-size: var(--large);
+      font-weight: bold;
+      display: flex;
+      justify-content: left;
+    }
+  }
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .project-card {
+    width: 80%;
+
+    &__title {
+      font-size: var(--large);
+      font-weight: bold;
+      display: flex;
+      justify-content: left;
+    }
+  }
+}

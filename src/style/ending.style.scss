@@ -1,0 +1,47 @@
+.ending {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/bg/bg2.jpg");
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__thanks {
+    font-size: var(--big-large);
+  }
+
+  &__ment {
+    font-size: var(--large);
+  }
+}
+
+/* 큰 데스크탑 */
+@media (min-width: 1201px) {
+}
+
+/* 작은 데스크탑 */
+@media (max-width: 1200px) {
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+}
+
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .ending {
+    &__thanks {
+      font-size: var(--large);
+    }
+
+    &__ment {
+      font-size: var(--midium);
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.scroll {
+  width: 22px;
+  opacity: 0;
+  img {
+    width: 100%;
+  }
+
+  &__show {
+    width: 22px;
+    opacity: 1;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    margin-right: -11px;
+    animation: move 0.5s linear 0s infinite alternate;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* 큰 데스크탑 */
+@media (min-width: 1201px) {
+}
+
+/* 작은 데스크탑 */
+@media (max-width: 1200px) {
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+}
+
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+}

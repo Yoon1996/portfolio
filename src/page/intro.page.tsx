@@ -1,17 +1,20 @@
 import { useEffect, useState } from "react";
 import "../style/intro.style.scss";
+import ScrollShapeComponent from "../component/scrollShape.component";
 const IntroPage = () => {
   useEffect(() => {
     showHello();
     setTimeout(() => {
       showTitle();
       showMent();
+      showArrow();
     }, 100);
   }, []);
   const [wholeShow, setWholeShow] = useState<boolean>(false);
   const [helloStyle, setHelloStyle] = useState<boolean>(false);
   const [titleStyle, setTitleStyle] = useState<boolean>(false);
   const [mentStyle, setMentStyle] = useState<boolean>(false);
+  const [arrowStyle, setArrowStyle] = useState<boolean>(false);
   //intro__hello 애니메이션
   const showHello = async () => {
     setHelloStyle(true);
@@ -34,6 +37,13 @@ const IntroPage = () => {
     setTimeout(() => {
       setMentStyle(true);
     }, 4000);
+  };
+
+  //arrow 애니메이션 보여주기
+  const showArrow = () => {
+    setTimeout(() => {
+      setArrowStyle(true);
+    }, 5000);
   };
   return (
     <>
@@ -67,6 +77,7 @@ const IntroPage = () => {
           ""
         )}
       </div>
+      <ScrollShapeComponent show={arrowStyle}></ScrollShapeComponent>
     </>
   );
 };

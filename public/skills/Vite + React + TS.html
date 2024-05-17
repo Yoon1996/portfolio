@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Vite + React + TS_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React + TS</title>
+  <style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/App.scss">:root {
+  --basic-white: #ffffff;
+  --basic-black: #212121;
+  --basic-blue: #3166ff;
+  --basic-red: #ff645c;
+  --gray-scale-fa: #fafafa;
+  --gray-scale-f6: #f6f8fa;
+  --gray-scale-ee: #eeeeee;
+  --gray-scale-e4: #e4e4e4;
+  --gray-scale-d8: #d8dee4;
+  --gray-scale-cc: #cccccc;
+  --gray-scale-bd: #bdbdbd;
+  --gray-scale-99: #999999;
+  --gray-scale-66: #666666;
+  --gray-scale-30: #303030;
+  --main-basic: #aed3f2;
+  --main-dark: #85c8f2;
+  --main-normal: #b6dbf2;
+  --main-light: #d0e5f2;
+}
+
+:root {
+  --small: 14px;
+  --normal: 16px;
+  --middium: 20px;
+  --large: 24px;
+  --big-large: 50px;
+}
+
+:root {
+  width: 100vw;
+  position: relative;
+  height: 100vh;
+}
+
+:root body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+}
+
+div {
+  box-sizing: border-box;
+  font-family: "SUIT-Regular";
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  background: #f2f2f2;
+  position: relative;
+}</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/skills.style.scss">@charset "UTF-8";
+.skills {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background: white;
+  border: 1px transparent;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px var(--main-normal);
+}
+.skills__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+/* 태블릿 */
+/* 중간 크기 모바일 장치 */
+/* 작은 모바일 장치 */</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/portfolio.scss">@charset "UTF-8";
+.portfolio {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.portfolio__header {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(174, 214, 134);
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio__title {
+  font-size: var(--big-large);
+}
+.portfolio__main {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio__intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 40px;
+  border-bottom: 1px solid var(--gray-scale-bd);
+}
+.portfolio__menu-title {
+  font-size: var(--large);
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.portfolio__menu-small-title {
+  font-size: var(--middium);
+}
+.portfolio__feature {
+  width: 100%;
+}
+.portfolio__feature-content {
+  line-height: 2;
+}
+.portfolio__feature-client {
+  margin-bottom: 20px;
+}
+.portfolio__skill {
+  width: 100%;
+}
+.portfolio__menu-content {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.portfolio__skill-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--gray-scale-30);
+}
+.portfolio__pictures {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio__picture {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+.portfolio__picture-img {
+  width: calc(33.3333333333% - 14px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+.portfolio__picture-ment {
+  margin-top: 10px;
+  color: var(--gray-scale-30);
+}
+.portfolio img {
+  width: 100%;
+  border: 1px solid var(--gray-scale-bd);
+  border-radius: 5px;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+/* 태블릿 */
+/* 중간 크기 모바일 장치 */
+/* 작은 모바일 장치 */</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/navigation.style.scss">@charset "UTF-8";
+.navigation {
+  width: 50px;
+  height: 200px;
+  background-color: var(--main-normal);
+  top: 0;
+  gap: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  margin-top: -75px;
+  transition: all 1s;
+  border-radius: 10px;
+  z-index: 98;
+}
+.navigation__sticky {
+  border-radius: 10px;
+  opacity: 1;
+  transition: all 1s;
+  width: 50px;
+  height: 200px;
+  position: fixed;
+  background-color: var(--main-normal);
+  top: 50%;
+  margin-top: -75px;
+  gap: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 98;
+}
+.navigation__menu {
+  width: 50px;
+  min-height: 40px;
+  display: flex;
+  cursor: pointer;
+  background-color: var(--main-normal);
+  border-radius: 10px 10px 10px 10px;
+  transition: all 0.5s;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.navigation__menu-ment {
+  font-size: 20px;
+  max-height: 40px;
+  overflow: hidden;
+  display: flex;
+  line-height: 40px;
+  justify-content: center;
+}
+.navigation__menu__animation {
+  width: 150px;
+  min-height: 40px;
+  overflow: hidden;
+  border-radius: 10px 0px 0px 10px;
+  background-color: black;
+  color: white;
+  transform: translateX(-50px);
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+@media (max-width: 1200px) {
+  .navigation {
+    width: 50px;
+    height: 200px;
+    top: 0;
+    gap: 20px;
+    right: 20px;
+  }
+  .navigation__sticky {
+    right: 20px;
+  }
+}
+/* 태블릿 */
+@media (max-width: 1024px) {
+  .navigation {
+    right: 20px;
+  }
+  .navigation__sticky {
+    right: 20px;
+  }
+}
+/* 중간 크기 모바일 장치 */
+/* 작은 모바일 장치 */</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/title.style.scss">@charset "UTF-8";
+.title {
+  font-size: var(--big-large);
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+/* 태블릿 */
+/* 중간 크기 모바일 장치 */
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .title {
+    font-size: 36px;
+    width: 100%;
+  }
+}</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/about-me.style.scss">@charset "UTF-8";
+.about {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about__character {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 1s;
+}
+.about__character__show {
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 2s;
+}
+.about__main-ment {
+  display: flex;
+  justify-content: left;
+  font-size: var(--large);
+  margin-top: 20px;
+  background: var(--main-normal);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.about__sub-ment {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--main-light);
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 50%;
+}
+.about__sub-q {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+}
+.about__sub-answer {
+  width: 100%;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.about__skill-wrap {
+  width: 50%;
+  opacity: 0;
+  transform: translateX(-1000px);
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s;
+  margin-top: 20px;
+  background: var(--main-light);
+  padding: 20px 30px;
+}
+.about__skill-wrap__show {
+  width: 50%;
+  opacity: 1;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background: var(--main-light);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.about__skill-content {
+  width: calc(33.3333333333% - 75px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about__skill-title {
+  font-size: var(--large);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+/* 태블릿 */
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+  .about__sub-ment {
+    width: 80%;
+  }
+  .about__skill-wrap__show {
+    width: 80%;
+  }
+  .about__skill-content {
+    display: flex;
+    align-items: center;
+  }
+  .about__skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .about__character {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 1s;
+  }
+  .about__character__show {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 2s;
+  }
+  .about__character-img {
+    width: 100%;
+  }
+  .about__character-img img {
+    width: 100%;
+  }
+  .about__main-ment {
+    font-size: var(--midium);
+  }
+  .about__sub-ment {
+    padding: 20px 30px;
+  }
+  .about__sub-q {
+    font-size: 16px;
+  }
+  .about__sub-answer {
+    font-size: 14px;
+  }
+  .about__skill-wrap__show {
+    width: 80%;
+  }
+  .about__skill-content {
+    width: 100%;
+  }
+  .about__skill-title {
+    font-size: var(--midium);
+  }
+  .about__skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+  }
+}</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/career.style.scss">@charset "UTF-8";
+.career {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.career__wrap {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.career__card {
+  width: calc(50% - 20px);
+  padding: 20px;
+  background: var(--main-light);
+  border-radius: 10px;
+}
+.career__period {
+  font-size: var(--small);
+  color: var(--gray-scale-66);
+}
+.career__name {
+  font-size: var(--large);
+  font-weight: bold;
+}
+.career__position {
+  font-weight: bold;
+}
+.career__works {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.career__show {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s;
+  background: white;
+  counter-reset: black;
+  border: transparent;
+}
+.career__show:hover {
+  background: black;
+  color: white;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+/* 태블릿 */
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+  .career__wrap {
+    width: 80%;
+  }
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .career__wrap {
+    width: 80%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .career__card {
+    width: 100%;
+    height: 100%;
+  }
+  .career__name {
+    font-size: var(--midium);
+  }
+  .career__position {
+    font-size: 14px;
+  }
+  .career__works {
+    font-size: 12px;
+  }
+}</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/ending.style.scss">@charset "UTF-8";
+.ending {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/bg/bg2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.ending__thanks {
+  font-size: var(--big-large);
+}
+.ending__ment {
+  font-size: var(--large);
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+/* 태블릿 */
+/* 중간 크기 모바일 장치 */
+/* 작은 모바일 장치 */</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/intro.style.scss">@charset "UTF-8";
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/bg/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  z-index: -10;
+}
+.intro__hello {
+  font-size: var(--big-large);
+  opacity: 0;
+  transition: all 1s;
+}
+.intro__hello__show {
+  font-size: var(--big-large);
+  opacity: 1;
+  transition: all 1s;
+}
+.intro__title {
+  font-size: var(--big-large);
+  opacity: 0;
+}
+.intro__title__show {
+  font-size: var(--big-large);
+  opacity: 1;
+  transition: all 2s;
+}
+.intro__ment-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.intro__ment {
+  opacity: 0;
+  font-size: var(--large);
+}
+.intro__ment__show {
+  opacity: 1;
+  font-size: var(--large);
+  transition: all 2s;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+/* 태블릿 */
+/* 중간 크기 모바일 장치 */
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .intro {
+    height: 50vh;
+  }
+  .intro__hello {
+    font-size: var(--large);
+    opacity: 0;
+    transition: all 1s;
+  }
+  .intro__hello__show {
+    font-size: var(--large);
+    opacity: 1;
+    transition: all 1s;
+  }
+  .intro__title {
+    font-size: var(--large);
+    opacity: 0;
+  }
+  .intro__title__show {
+    font-size: var(--large);
+    opacity: 1;
+    transition: all 2s;
+  }
+  .intro__ment {
+    opacity: 0;
+    font-size: var(--midum);
+  }
+  .intro__ment__show {
+    opacity: 1;
+    font-size: var(--midum);
+    transition: all 2s;
+  }
+}</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/scrollShape.style.scss">@charset "UTF-8";
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.scroll {
+  width: 22px;
+  opacity: 0;
+}
+.scroll img {
+  width: 100%;
+}
+.scroll__show {
+  width: 22px;
+  opacity: 1;
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  margin-right: -11px;
+  animation: move 0.5s linear 0s infinite alternate;
+}
+.scroll__show img {
+  width: 100%;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+/* 태블릿 */
+/* 중간 크기 모바일 장치 */
+/* 작은 모바일 장치 */</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/project-card.style.scss">@charset "UTF-8";
+.project-card {
+  width: calc(33.3333333333% - 40px);
+  height: 360px;
+  background-color: var(--main-light);
+  border-radius: 10px;
+}
+.project-card__wrap {
+  padding: 20px 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-card__img {
+  width: 100%;
+  height: 60%;
+}
+.project-card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.project-card__title {
+  font-size: var(--large);
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+}
+.project-card__button-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-card__button {
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: transparent;
+  background: white;
+}
+.project-card__button:hover {
+  background-color: black;
+  color: white;
+}
+.project-card__button:hover a {
+  color: white;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+/* 태블릿 */
+@media (max-width: 1024px) {
+  .project-card {
+    width: calc(33.3333333333% - 20px);
+  }
+  .project-card__wrap {
+    padding: 20px 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .project-card__img {
+    width: 100%;
+    height: 100%;
+  }
+  .project-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .project-card__info {
+    width: 100%;
+    height: 160px;
+  }
+}
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 20px);
+  }
+  .project-card__title {
+    font-size: var(--large);
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+  }
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .project-card {
+    width: 80%;
+  }
+  .project-card__title {
+    font-size: var(--large);
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+  }
+}</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/years.style.scss">@charset "UTF-8";
+.years {
+  width: 16%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: var(--main-normal);
+  border-radius: 30px;
+}
+.years__menu {
+  border-radius: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.years__menu:hover {
+  background-color: black;
+  border-radius: 30px;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+@media (max-width: 1200px) {
+  .years {
+    width: 30%;
+  }
+}
+/* 태블릿 */
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+  .years {
+    width: 50%;
+  }
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .years {
+    width: 70%;
+  }
+}</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/style/project.style.scss">@charset "UTF-8";
+.project {
+  width: 100vw;
+  height: 100%;
+}
+.project__list {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 40px;
+  transition: all 2s;
+}
+
+/* 큰 데스크탑 */
+/* 작은 데스크탑 */
+@media (max-width: 1200px) {
+  .project__list {
+    width: 80%;
+  }
+}
+/* 태블릿 */
+@media (max-width: 1024px) {
+  .project__list {
+    width: 80%;
+    gap: 20px;
+    padding-left: 20px;
+  }
+}
+/* 중간 크기 모바일 장치 */
+@media (max-width: 768px) {
+  .project__list {
+    width: 80%;
+    gap: 20px;
+    padding-left: 20px;
+  }
+}
+/* 작은 모바일 장치 */
+@media (max-width: 480px) {
+  .project__list {
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+  }
+}</style><style type="text/css" data-vite-dev-id="/Users/noname_1/Documents/portfolio/src/index.css">/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+</style><style id="">[data-typeit-id]:before {content: '.'; display: inline-block; width: 0; visibility: hidden;}</style><style id="3925875">[data-typeit-id='3925875'] .ti-cursor { display: inline-block; width: 0;  font-family: var(--ti-cursor-font-family, SUIT-Regular); font-weight: var(--ti-cursor-font-weight, 400); font-size: var(--ti-cursor-font-size, 24px); font-style: var(--ti-cursor-font-style, normal); line-height: var(--ti-cursor-line-height, 36px); color: var(--ti-cursor-color, rgb(0, 0, 0)); transform: var(--ti-cursor-transform, translateX(-.125em)); }</style><style id="">[data-typeit-id]:before {content: '.'; display: inline-block; width: 0; visibility: hidden;}</style><style id="9190022">[data-typeit-id='9190022'] .ti-cursor { display: inline-block; width: 0;  font-family: var(--ti-cursor-font-family, SUIT-Regular); font-weight: var(--ti-cursor-font-weight, 400); font-size: var(--ti-cursor-font-size, 24px); font-style: var(--ti-cursor-font-style, normal); line-height: var(--ti-cursor-line-height, 36px); color: var(--ti-cursor-color, rgb(0, 0, 0)); transform: var(--ti-cursor-transform, translateX(-.125em)); }</style><style id="">[data-typeit-id]:before {content: '.'; display: inline-block; width: 0; visibility: hidden;}</style><style id="5053601">[data-typeit-id='5053601'] .ti-cursor { display: inline-block; width: 0;  font-family: var(--ti-cursor-font-family, SUIT-Regular); font-weight: var(--ti-cursor-font-weight, 400); font-size: var(--ti-cursor-font-size, 24px); font-style: var(--ti-cursor-font-style, normal); line-height: var(--ti-cursor-line-height, 36px); color: var(--ti-cursor-color, rgb(0, 0, 0)); transform: var(--ti-cursor-transform, translateX(-.125em)); }</style><style id="">[data-typeit-id]:before {content: '.'; display: inline-block; width: 0; visibility: hidden;}</style><style id="2921428">[data-typeit-id='2921428'] .ti-cursor { display: inline-block; width: 0;  font-family: var(--ti-cursor-font-family, SUIT-Regular); font-weight: var(--ti-cursor-font-weight, 400); font-size: var(--ti-cursor-font-size, 24px); font-style: var(--ti-cursor-font-style, normal); line-height: var(--ti-cursor-line-height, 36px); color: var(--ti-cursor-color, rgb(0, 0, 0)); transform: var(--ti-cursor-transform, translateX(-.125em)); }</style><style id="">[data-typeit-id]:before {content: '.'; display: inline-block; width: 0; visibility: hidden;}</style><style id="3646259">[data-typeit-id='3646259'] .ti-cursor { display: inline-block; width: 0;  font-family: var(--ti-cursor-font-family, SUIT-Regular); font-weight: var(--ti-cursor-font-weight, 400); font-size: var(--ti-cursor-font-size, 24px); font-style: var(--ti-cursor-font-style, normal); line-height: var(--ti-cursor-line-height, 36px); color: var(--ti-cursor-color, rgb(0, 0, 0)); transform: var(--ti-cursor-transform, translateX(-.125em)); }</style></head>
+  <body>
+    <div id="root"><div class="content"><div class="intro"><div class="intro__hello">안녕하십니까?</div><div class="intro__title__show">프론트엔드 개발자 <span class="strong">윤성준</span> 입니다.</div><div class="intro__ment-wrap"><div class="intro__ment__show"><span class="strong">'저는'</span></div><div class="intro__ment__show"><span class="strong">'꼼꼼함'</span> 으로 사용자에게 믿음을 주고</div><div class="intro__ment__show"><span class="strong">'책임감'</span> 으로 회사에 도움이 될 수 있는 개발자 입니다.</div></div></div><div class="scroll__show"><img src="./Vite + React + TS_files/vector.png" alt=""></div><div><div class="title">About Me</div><div class="about"><div class="about__character"><div class="about__character-img"><img src="./Vite + React + TS_files/me1.png" alt=""></div><div class="about__character-img"><img src="./Vite + React + TS_files/me2.png" alt=""></div></div><div class="about__main-ment">케이크 디자이너에서 개발자로!</div><div class="about__sub-ment"><div class="about__sub-q">Q. 왜?</div><div class="about__sub-answer"><br> 어려서부터 디자인에 관심이 많았습니다. <br> 주문 제작 케이크를 통해 많은 디자인을 접하게 되었고, 케이크 뿐만 아니라 다른 방식으로도 디자인을 해보고 싶다고 느끼게 되었습니다. <br>또한 수기로 하나하나 입력하는게 아닌 자동화된 코드를 이용하여 효율적으로 업무를 처리 하는 것에도 매력을 느끼게 되었습니다.</div></div><div class="about__main-ment">skills</div><div class="about__skill-wrap__show"><div class="about__skill-content"><div class="about__skill-title">FrontEnd</div><div class="about__skills"><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/html.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/css.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/js.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/ts.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/react.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/sass.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/github.png" alt=""></div></div></div><div class="about__skill-content"><div class="about__skill-title">BackEnd</div><div class="about__skills"><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/redux.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/recoil.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/nestjs.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/nodejs.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/express.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/mysql.png" alt=""></div><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/sequelize.png" alt=""></div></div></div><div class="about__skill-content"><div class="about__skill-title">Design</div><div class="about__skills"><div class="skills"><img class="skills__img" src="./Vite + React + TS_files/figma.png" alt=""></div></div></div></div></div></div><div><div class="title">Career &amp; Education</div><div class="career"><div class="career__wrap"><div class="career__card"><div class="career__period">2019.04 - 2022.04</div><div class="career__name">휘피 케이크</div><div class="career__position">~ 사원, 매니저, 점장</div><div class="career__works"><div class="career__work">• 주문제작 케이크 생산 및 디자인</div><div class="career__work">• 매장 관리 및 직원 관리</div><div class="career__work">• 소비자와의 카카오톡 플러스 친구를 통한 소통및 응대</div></div></div><div class="career__card"><div class="career__period">2022.06 - 2022.12</div><div class="career__name">인천 그린컴퓨터 아카데미</div><div class="career__position">~ 사설 교육 (퍼블리셔) </div><div class="career__works"><div class="career__work">• html, css, jquery, js, react 교육</div></div></div></div></div></div><div><div class="title">Project</div><div style="display: flex; flex-direction: column; align-items: center; gap: 40px;"><div class="years"><div class="years__menu">All</div><div class="years__menu">2022</div><div class="years__menu">2023</div><div class="years__menu">2024</div></div><div class="project"><div class="project__list"><div class="project-card"><div class="project-card__wrap"><div class="project-card__img"><img src="./Vite + React + TS_files/portfolio.png" alt=""></div><div class="project-card__info"><div class="project-card__title">PORTFOLIO</div><div>포트폴리오 소개 사이트</div></div></div></div><div class="project-card"><div class="project-card__wrap"><div class="project-card__img"><img src="./Vite + React + TS_files/playground.png" alt=""></div><div class="project-card__info"><div class="project-card__title">PLAYGROUND</div><div>서울 공공 체육시설 예약 웹사이트</div></div></div></div><div class="project-card"><div class="project-card__wrap"><div class="project-card__img"><img src="./Vite + React + TS_files/more.png" alt=""></div><div class="project-card__info"><div class="project-card__title">MORE(모두의 레시피)</div><div>레시피 저장 웹 사이트</div></div></div></div><div class="project-card"><div class="project-card__wrap"><div class="project-card__img"><img src="./Vite + React + TS_files/woongjin.png" alt=""></div><div class="project-card__info"><div class="project-card__title">WOONGJIN</div><div>웅진 웹 사이트 리디자인</div></div></div></div><div class="project-card"><div class="project-card__wrap"><div class="project-card__img"><img src="./Vite + React + TS_files/tous.png" alt=""></div><div class="project-card__info"><div class="project-card__title">TOUS</div><div>뚜레쥬르 클론 코딩 사이트</div></div></div></div><div class="project-card"><div class="project-card__wrap"><div class="project-card__img"><img src="./Vite + React + TS_files/cartrider.png" alt=""></div><div class="project-card__info"><div class="project-card__title">CARTRIDER</div><div>넥슨 카트라이더 클론 코딩 사이트</div></div></div></div><div class="project-card"><div class="project-card__wrap"><div class="project-card__img"><img src="./Vite + React + TS_files/myprotein.png" alt=""></div><div class="project-card__info"><div class="project-card__title">MYPROTEIN</div><div>마이 프로틴 클론 코딩 사이트</div></div></div></div><div class="project-card"><div class="project-card__wrap"><div class="project-card__img"><img src="./Vite + React + TS_files/loreal.png" alt=""></div><div class="project-card__info"><div class="project-card__title">LOREAL</div><div>로레알 클론 코딩 사이트</div></div></div></div></div></div></div></div><div class="ending"></div><div class="navigation"><div class="navigation__menu"><img src="./Vite + React + TS_files/aboutme.png" alt=""></div><div class="navigation__menu"><img src="./Vite + React + TS_files/career.png" alt=""></div><div class="navigation__menu"><img src="./Vite + React + TS_files/project.png" alt=""></div></div></div></div>
+    <script type="module" src="./Vite + React + TS_files/main.tsx"></script>
+  
+
+</body></html>
